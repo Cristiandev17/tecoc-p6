@@ -1,4 +1,6 @@
-﻿namespace tecoc.Get.Apis;
+﻿using tecoc.Get.Apis.Pages;
+
+namespace tecoc.Get.Apis;
 
 public partial class App : Application
 {
