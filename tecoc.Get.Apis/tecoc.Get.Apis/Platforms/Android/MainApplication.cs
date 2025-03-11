@@ -1,7 +1,7 @@
 ﻿using Android.App;
 using Android.Runtime;
 
-namespace tecoc.Get.Apis;
+namespace Tecoc.Get.Apis;
 
 [Application]
 public class MainApplication : MauiApplication

@@ -1,7 +1,7 @@
 ﻿using Microsoft.Extensions.Logging;
 using UraniumUI;
 
-namespace tecoc.Get.Apis;
+namespace Tecoc.Get.Apis;
 
 public static class MauiProgram
 {

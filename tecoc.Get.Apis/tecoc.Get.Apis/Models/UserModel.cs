@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace tecoc.Get.Apis.Models
+namespace Tecoc.Get.Apis.Models
 {
     public class UserModel
     {

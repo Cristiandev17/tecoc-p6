@@ -1,4 +1,4 @@
-namespace tecoc.Get.Apis.Pages;
+namespace Tecoc.Get.Apis.Pages;
 
 public partial class AppShell : Shell
 {

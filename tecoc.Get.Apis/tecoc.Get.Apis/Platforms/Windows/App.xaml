@@ -1,8 +1,8 @@
 ﻿<maui:MauiWinUIApplication
-    x:Class="tecoc.Get.Apis.WinUI.App"
+    x:Class="Tecoc.Get.Apis.WinUI.App"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:maui="using:Microsoft.Maui"
-    xmlns:local="using:tecoc.Get.Apis.WinUI">
+    xmlns:local="using:Tecoc.Get.Apis.WinUI">
 
 </maui:MauiWinUIApplication>

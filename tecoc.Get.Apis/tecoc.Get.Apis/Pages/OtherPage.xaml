@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:view="clr-namespace:tecoc.Get.Apis.ViewModels"
-             x:Class="tecoc.Get.Apis.Pages.OtherPage"
+             xmlns:view="clr-namespace:Tecoc.Get.Apis.ViewModels"
+             x:Class="Tecoc.Get.Apis.Pages.OtherPage"
              Title="OtherPage">
              <ContentPage.BindingContext>
                 <view:OtherViewModel/>

@@ -1,6 +1,6 @@
-﻿using tecoc.Get.Apis.Pages;
+﻿using Tecoc.Get.Apis.Pages;
 
-namespace tecoc.Get.Apis;
+namespace Tecoc.Get.Apis;
 
 public partial class App : Application
 {

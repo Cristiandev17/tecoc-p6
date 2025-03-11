@@ -1,7 +1,7 @@
 ﻿using ObjCRuntime;
 using UIKit;
 
-namespace tecoc.Get.Apis;
+namespace Tecoc.Get.Apis;
 
 public class Program
 {
