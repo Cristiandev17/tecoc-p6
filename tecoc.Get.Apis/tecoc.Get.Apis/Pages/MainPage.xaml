@@ -4,17 +4,33 @@
              xmlns:view="clr-namespace:Tecoc.Get.Apis.ViewModels"
              x:Class="Tecoc.Get.Apis.Pages.MainPage"
              Title="MainPage">
-             <ContentPage.BindingContext>
+             <!-- <ContentPage.BindingContext>
                 <view:MainViewModel/>
-             </ContentPage.BindingContext>
+             </ContentPage.BindingContext> -->
     <VerticalStackLayout Spacing="10">
         <Label 
             TextColor="{StaticResource Duke}"
-            FontSize="90"
+            FontSize="10"
             Text="Welcome to .NET MAUI!"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
 
-            <Button StyleClass="FilledButton" Text="Filled Button" Command="{Binding NextCommand}"/>
+            <Button StyleClass="FilledButton" Text="Filled Button" Command="{Binding GetPersonsCommand}"/>
+
+            <CollectionView ItemsSource="{Binding AllUsers}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <VerticalStackLayout Spacing="8">
+                            <Label Text="{Binding Email}"/>
+                            <Label Text="{Binding Nat}"/>
+                            <Label Text="{Binding Name.first}"/>
+                            <Image Source="{Binding Picture.medium}"/>
+                        </VerticalStackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+               
+
+            </CollectionView>
+
     </VerticalStackLayout>
 </ContentPage>
