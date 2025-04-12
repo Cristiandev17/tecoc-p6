@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:material="http://schemas.enisn-projects.io/dotnet/maui/uraniumui/material"
              xmlns:local="clr-namespace:Tecoc.Get.Apis"
+             xmlns:cv="clr-namespace:Tecoc.Get.Apis.Converters"
              x:Class="Tecoc.Get.Apis.App">
     <Application.Resources>
         <ResourceDictionary>
@@ -10,8 +11,13 @@
                 <ResourceDictionary x:Name="appColors" Source="Resources/Styles/Colors.xaml" />
                 <ResourceDictionary x:Name="appStyles" Source="Resources/Styles/Styles.xaml" />
             
-                <material:StyleResource ColorsOverride="{x:Reference appColors}" BasedOn="{x:Reference appStyles}" />
+                <!-- <material:StyleResource ColorsOverride="{x:Reference appColors}" BasedOn="{x:Reference appStyles}" /> -->
             </ResourceDictionary.MergedDictionaries>
+
+            <cv:InvertBoolConverter x:Key="invertBoolConverter" />
+
         </ResourceDictionary>
+
+       
     </Application.Resources>
 </Application>

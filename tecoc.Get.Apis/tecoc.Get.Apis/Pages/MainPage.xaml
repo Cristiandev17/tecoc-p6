@@ -16,21 +16,23 @@
             HorizontalOptions="Center" />
 
             <Button StyleClass="FilledButton" Text="Filled Button" Command="{Binding GetPersonsCommand}"/>
+            <Grid>
+                <ActivityIndicator IsRunning="true" IsVisible="{Binding IsBusy}"/>
+                <CollectionView IsVisible="{Binding IsBusy, Converter={StaticResource invertBoolConverter}}" ItemsSource="{Binding AllUsers}">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <VerticalStackLayout Spacing="8">
+                                <Label Text="{Binding Email}"/>
+                                <Label Text="{Binding Nat}"/>
+                                <Label Text="{Binding Name.first}"/>
+                                <Image Source="{Binding Picture.medium}"/>
+                            </VerticalStackLayout>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </Grid>
 
-            <CollectionView ItemsSource="{Binding AllUsers}">
-                <CollectionView.ItemTemplate>
-                    <DataTemplate>
-                        <VerticalStackLayout Spacing="8">
-                            <Label Text="{Binding Email}"/>
-                            <Label Text="{Binding Nat}"/>
-                            <Label Text="{Binding Name.first}"/>
-                            <Image Source="{Binding Picture.medium}"/>
-                        </VerticalStackLayout>
-                    </DataTemplate>
-                </CollectionView.ItemTemplate>
-               
-
-            </CollectionView>
+           
 
     </VerticalStackLayout>
 </ContentPage>
